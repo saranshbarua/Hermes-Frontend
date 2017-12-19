@@ -8,9 +8,9 @@ class MyContent extends React.Component {
 
     render()
     {
-        return ( <Content style={{ minHeight:'1800px',backgroundColor:"#fff",marginTop:"70px" }}>
+        return ( <Content style={{ minHeight:'2000px',backgroundColor:"#fff",marginTop:"70px" }}>
             <Row  type="flex" justify="space-between">
-            <Col span={6} style={{backgroundColor:"#E9EBEF",minHeight:"1800px"}}/>
+            <Col span={6} style={{backgroundColor:"#E9EBEF",minHeight:"2000px"}}/>
             <Col span={10}><Post/><Post/><Post/></Col>
             <Col span={6}/>
             </Row>
