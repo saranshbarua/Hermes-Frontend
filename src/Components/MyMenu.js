@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu} from 'antd';
-
+import {Link} from 'react-router-dom';
 class MyMenu extends React.Component {
     state = {
         current: 'mail',
@@ -21,11 +21,11 @@ class MyMenu extends React.Component {
                 style={{backgroundColor:"#272932",borderColor:"#272932"}}
 
             >
-                <Menu.Item key="mail">
-                    Events
+                <Menu.Item key="Home">
+                    <Link to="/">Home</Link>
                 </Menu.Item>
-                <Menu.Item key="app" >
-                    Competition
+                <Menu.Item key="event" >
+                    <Link to="/event">Event</Link>
                 </Menu.Item>
                 <Menu.Item key="/">
                     Login
