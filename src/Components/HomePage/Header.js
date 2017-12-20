@@ -2,7 +2,7 @@ import React from 'react';
 import {Affix,Carousel} from 'antd';
 import Midbar from "./Midbar";
 import styled from 'styled-components';
-import ".//Midbar.css";
+import "./CSS/Midbar.css";
 const Subnav =  styled.div`
 min-height:70px;
 background-color:#272932;
@@ -21,17 +21,17 @@ class Header extends React.Component {
         return (
             <div>
             <Carousel autoplay>
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
+             <div><h3>1</h3></div>
+              <div><h3>2</h3></div>
     <div><h3>3</h3></div>
     <div><h3>4</h3></div>
     </Carousel>
-        <div style={{marginTop:"-560px"}}>
+        <div style={{marginTop:"-510px"}}>
             <Affix offsetTop={46} >
                 <Subnav><H1>Hermes</H1></Subnav>
             </Affix>
         </div>
-        <div style={{marginTop:"350px"}}>
+        <div style={{marginTop:"300px"}}>
     <Midbar/>
     </div></div>);
     }

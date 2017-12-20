@@ -3,7 +3,7 @@ import { Menu} from 'antd';
 import {Link} from 'react-router-dom';
 class MyMenu extends React.Component {
     state = {
-        current: 'mail',
+        current: 'Home',
     }
     handleClick = (e) => {
         console.log('click ', e);
@@ -27,12 +27,10 @@ class MyMenu extends React.Component {
                 <Menu.Item key="event" >
                     <Link to="/event">Event</Link>
                 </Menu.Item>
-                <Menu.Item key="/">
-                    Login
+                <Menu.Item key="login">
+                    <Link to="/login">Login</Link>
                 </Menu.Item>
             </Menu>
-
-
         );
     }
 }

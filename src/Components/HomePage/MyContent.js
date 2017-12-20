@@ -1,6 +1,6 @@
 import React from 'react';
 import {Layout,Col,Row} from 'antd';
-import Post from './Post'
+import Post from '../Common/Post'
 const {Content} = Layout;
 
 
